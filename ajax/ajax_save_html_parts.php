@@ -13,8 +13,8 @@ if(!empty($_POST['data'])){
     file_put_contents( __DIR__ . "/$filename", $data);
 
     //convert to the .docx format
-    $output = shell_exec("unoconv -f docx $filename");
-    echo $output;
+    $output = shell_exec("sudo unoconv -f docx $filename");
+    //echo $output;
 
     echo "ajax/annotated.docx";
 
