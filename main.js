@@ -74,7 +74,10 @@ $(document).ready(function(){
 																	//CKEDITOR.config.allowedContent = true;
 
 																	//activate shared space plugin
-																	CKEDITOR.config.extraPlugins = 'sharedspace';
+																	//CKEDITOR.config.extraPlugins = 'sharedspace';
+
+                                                                    //CKEDITOR.config.extraPlugins = 'image2';
+                                                                    CKEDITOR.config.extraPlugins = 'stampwithdate';
 
 																	CKEDITOR.config.sharedSpaces = {
 																	    top: 'topButtonsToolbar'
@@ -91,7 +94,7 @@ $(document).ready(function(){
 																	//common button config
 																	var btnConfig = {
 																		toolbarGroups: [
-																			{name:"basicstyles","groups":["basicstyles", "colors"]},
+																			{name:"basicstyles","groups":["basicstyles", "colors", "stampwithdate"]},
 																			//{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
 																		    //{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
 																		    //{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
